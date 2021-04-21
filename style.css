@@ -1,0 +1,157 @@
+*{
+    font-family: 'Bubblegum Sans', cursive;
+}
+.main-title , select{
+    color: #f44336;
+}
+.main-title{
+    margin-top: 40px;
+    font-size: 60px;
+    font-family: 'Bangers', cursive;
+}
+html , body , .mainContainer{
+    height: 100%;
+    margin: 0;
+}
+.mainContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+select{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ff7961;
+    outline: none;
+    font-style: italic;
+    font-size: 18px;
+}
+select:active, select:focus{
+    border: 2px solid #ba000d;
+}
+#popup{
+    position: fixed;
+    bottom: 0;
+    background-color: #ff7961;
+    height: 0;
+    width: 90%;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: linear .5s height;
+}
+#coin > img{
+    height: 80px;
+    width: 80px;
+    animation: infinite .6s coin-rotate;
+}
+#coin{
+    display: none;
+    animation: infinite 3s coin-flip;
+}
+#text{
+    opacity: 0;
+    transition: ease 1s opacity;
+}
+
+
+@media screen and (min-width:768px){
+    select{
+        width: 300px;
+        height: 60px;
+    }
+}
+@keyframes coin-rotate{
+    0%{
+        transform: rotateX(45deg);
+    }
+    8%{
+        transform: rotateX(90deg);
+    }
+    16%{
+        transform: rotateX(135deg);
+    }
+    24%{
+        transform: rotateX(180deg);
+    }
+    36%{
+        transform: rotateX(225deg);
+    }
+    44%{
+        transform: rotateX(270deg);
+    }
+    56%{
+        transform: rotateX(360deg);
+    }
+    60%{
+        transform: rotateX(270deg);
+    }
+    68%{
+        transform: rotateX(225deg);
+    }
+    74%{
+        transform: rotateX(180deg);
+    }
+    78%{
+        transform: rotateX(180deg);
+    }
+    84%{
+        transform: rotateX(135deg);
+    }
+    92%{
+        transform: rotateX(90deg);
+    }
+    100%{
+        transform: rotateX(45deg);
+    }
+}
+@keyframes coin-flip {
+    0%{
+        transform: translateY(-20px);
+    }
+    8%{
+        transform: translateY(-40px);
+    }
+    16%{
+        transform: translateY(-60px);
+    }
+    24%{
+        transform: translateY(-80px);
+    }
+    36%{
+        transform: translateY(-100px);
+    }
+    44%{
+        transform: translateY(-120px);
+    }
+    56%{
+        transform: translateY(-120px);
+    }
+    60%{
+        transform: translateY(-120px);
+    }
+    68%{
+        transform: translateY(-100px);
+    }
+    74%{
+        transform: translateY(-80px);
+    }
+    78%{
+        transform: translateY(-60px);
+    }
+    84%{
+        transform: translateY(-40px);
+    }
+    92%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}

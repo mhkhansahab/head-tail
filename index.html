@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Head or Tail | Game</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <audio src="./coin_drop_sm.mp3" id="coin-audio" loop="loop"></audio>
+        <div>
+            <div class="main-title">Head / Tail</div>
+        </div>
+        <div>
+            <select name="coin" id="selector">
+                <option value="None">None</option>
+                <option value="Head">Head</option>
+                <option value="Tail">Tail</option>
+            </select>
+        </div>
+        <div id="popup">
+            <div id="coin"><img src="./coin.png" alt="Coin Image"></div>
+            <div id="text">Select Your Side...&#128512;</div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

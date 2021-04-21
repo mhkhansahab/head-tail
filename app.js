@@ -5,7 +5,7 @@ let coin = document.getElementById("coin");
 let coinAudio = document.getElementById("coin-audio");
 
 setTimeout(function(){
-    popup.style.height = "70vh";
+    popup.style.height = "65vh";
     text.style.opacity = "1";
 },1000);
 
